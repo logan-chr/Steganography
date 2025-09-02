@@ -1,16 +1,16 @@
 import turtle
-
-code1 = ['13b', '4r', '2g', '2p', '4o', '3y', '3r', '1y', '1r', '1y', '1r', '1y', '1p', '1o', '1p', '1g', '1p', '3g', '3p', '3g', '3p', '2b', '1r', '1p', '1g']
-def generate_image(code):
-    colours = {
+colours = {
     'r':'red',
     'o':'orange',
     'y':'yellow',
     'g':'green',
     'b':'blue',
     'i':'indigo',
-    'p':'purple'
+    'p':'purple',
+    'w':'white'
     }
+def generate_image(code):
+    global colours
     list = []
     for i in range(len(code)):
         for j in range(int(code[i][:-1])):
@@ -57,4 +57,3 @@ def generate_image(code):
         # stop filling
         pen.end_fill()
 
-generate_image(code1)

@@ -19,6 +19,6 @@ def compress_image(image_data):
     return rle(image_data)
 
 
-IMAGE = ('bbbbbbbbbbbbbaaaaaassdassdfjsjsjlittltepersonsasdsa')
+IMAGE = ('bbbbbbbbbbbbbrrrrggppooooyyyrrryryrypopgpgggpppgggpppbbrpg')
 
 print(compress_image(IMAGE))

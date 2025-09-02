@@ -1,6 +1,7 @@
 import turtle
 colours = {
     'r':'red',
+    'z':'#f55442',
     'o':'orange',
     'y':'yellow',
     'g':'green',
@@ -56,4 +57,5 @@ def generate_image(code):
         pen.forward(30)
         # stop filling
         pen.end_fill()
+    turtle.Screen().exitonclick()
 

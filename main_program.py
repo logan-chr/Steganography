@@ -29,6 +29,9 @@ def input_img():
             flag = False
     return string1
 
-
+secret = ('11111111')
 code = compress_image(input_img())
 generate_image(code)
+
+
+

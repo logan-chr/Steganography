@@ -12,17 +12,51 @@ def input_img():
     string1 = ('')
     while flag == True:
         if mode == 'default':
-        
-            inp = input()
-            for i in range(len(inp)):
-                if inp[i] in colours:
-                    string1 += inp[i]
-                if inp == 'auto':
-                    mode = 'auto'
-                if inp[i] == -1:
-                    flag=  False
+            print('ii')
+            inp = str(input('print:'))
+            print(inp[:6])
+            print(inp[7:])
+            if inp[:6] == 'preset':
+                    print('p')
+                    if inp[7:]== 'sky':
+                        print('h')
+                        strinv=('bbbbwwbbbbbbbbbbbbbbbbbb'+
+                                'bbbwwwwwwbwwbbbbbbbyyybb'+
+                                'bbbbwwwwwwwwbbbbbbbyyybb'+
+                                'bbbbbbbbbbbbbbbbbbbyyybb'+
+                                'bbbbbbbbbbbbbbbbbbbbbbbb'+
+                                'bbbbbbbbbbbbbbbbbbbbbbbb'+
+                                'bbbbbbbbbbbbbbbbbbbbbbbb'+
+                                'bbbbbbbwwbbbbbbbbbbbbbbb'+
+                                'bbbbbbwwwwbbbbbbbbbbbbbb'+
+                                'bbbwwwwwwwwbbbbbbbbbbbbb'+
+                                'bbbbbbbbbbbbbbbbbbbgggbb'+
+                                'bbbbbbbbbbbbbwwwbbbgggbb'+
+                                'bbbbbbbbbbbbwwwbbbbbpbbb'+
+                                'ggbbbbbbbbbbbbbbbbbggggg'+
+                                'ggggbbbbbbbbggggggggggg'+
+                                'gggggggggggggggggggggggg'+
+                                'gggggggggggggggggggggggg'+
+                                'gggggggggggggggggggggggg'+
+                                'gggggggggggggggggggggggg'+
+                                'gggggggggggggggggggggggg'+
+                                'gggggggggggggggggggggggg'+
+                                'gggggggggggggggggggggggg')
+                        string1 = strinv
+                        flag = False
+                        print('hi')
+            else:
+                
+                for i in range(len(inp)):
+                    if inp[i] in colours:
+                        string1 += inp[i]
+                    if inp == 'auto':
+                        mode = 'auto'
+                    if inp[i] == -1:
+                        flag=  False
+    
         else:
-            for i in range(24*24):
+            while len(string1)< 24**2:
                 a = letters[random.randint(0,7)]
                 print(a)
                 string1 += a

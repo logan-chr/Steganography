@@ -1,4 +1,5 @@
 import turtle
+
 colours = {
     'r':'red',
     'z':'#f55442',
